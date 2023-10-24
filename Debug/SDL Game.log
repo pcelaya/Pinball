@@ -1,0 +1,9 @@
+﻿  ModulePhysics.cpp
+C:\Users\polcb2\Downloads\Physics II - Box2D - Handout 04\ModulePhysics.cpp(40,8): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\polcb2\Downloads\Physics II - Box2D - Handout 04\ModulePhysics.cpp(121,23): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\polcb2\Downloads\Physics II - Box2D - Handout 04\ModulePhysics.cpp(122,25): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\polcb2\Downloads\Physics II - Box2D - Handout 04\ModulePhysics.cpp(165,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\polcb2\Downloads\Physics II - Box2D - Handout 04\ModulePhysics.cpp(365,13): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\polcb2\Downloads\Physics II - Box2D - Handout 04\ModulePhysics.cpp(366,13): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+C:\Users\polcb2\Downloads\Physics II - Box2D - Handout 04\ModulePhysics.cpp(372,27): warning C4244: 'return': conversion from 'float32' to 'int', possible loss of data
+  SDL Game.vcxproj -> C:\Users\polcb2\Downloads\Physics II - Box2D - Handout 04\Debug\2D Physics - class 4.exe

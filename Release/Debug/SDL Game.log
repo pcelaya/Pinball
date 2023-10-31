@@ -1,9 +1,53 @@
-﻿  ModulePhysics.cpp
-C:\Users\polcb2\Downloads\Physics II - Box2D - Handout 04\ModulePhysics.cpp(40,8): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-C:\Users\polcb2\Downloads\Physics II - Box2D - Handout 04\ModulePhysics.cpp(121,23): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\polcb2\Downloads\Physics II - Box2D - Handout 04\ModulePhysics.cpp(122,25): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\polcb2\Downloads\Physics II - Box2D - Handout 04\ModulePhysics.cpp(165,20): warning C4018: '<': signed/unsigned mismatch
-C:\Users\polcb2\Downloads\Physics II - Box2D - Handout 04\ModulePhysics.cpp(365,13): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-C:\Users\polcb2\Downloads\Physics II - Box2D - Handout 04\ModulePhysics.cpp(366,13): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-C:\Users\polcb2\Downloads\Physics II - Box2D - Handout 04\ModulePhysics.cpp(372,27): warning C4244: 'return': conversion from 'float32' to 'int', possible loss of data
-  SDL Game.vcxproj -> C:\Users\polcb2\Downloads\Physics II - Box2D - Handout 04\Debug\2D Physics - class 4.exe
+﻿  ModuleScene.cpp
+C:\Users\polcb2\Downloads\Physics II - Pinball\Physics II - Box2D - Handout 04\ModuleScene.cpp(113,45): warning C4244: 'argument': conversion from 'TYPE' to 'TYPE', possible loss of data
+          with
+          [
+              TYPE=int
+          ]
+          and
+          [
+              TYPE=float
+          ]
+C:\Users\polcb2\Downloads\Physics II - Pinball\Physics II - Box2D - Handout 04\ModuleScene.cpp(113,30): warning C4244: 'argument': conversion from 'TYPE' to 'TYPE', possible loss of data
+          with
+          [
+              TYPE=int
+          ]
+          and
+          [
+              TYPE=float
+          ]
+C:\Users\polcb2\Downloads\Physics II - Pinball\Physics II - Box2D - Handout 04\ModuleScene.cpp(115,18): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\polcb2\Downloads\Physics II - Pinball\Physics II - Box2D - Handout 04\ModuleScene.cpp(117,70): warning C4244: 'argument': conversion from 'TYPE' to 'int', possible loss of data
+          with
+          [
+              TYPE=float
+          ]
+C:\Users\polcb2\Downloads\Physics II - Pinball\Physics II - Box2D - Handout 04\ModuleScene.cpp(117,47): warning C4244: 'argument': conversion from 'TYPE' to 'int', possible loss of data
+          with
+          [
+              TYPE=float
+          ]
+C:\Users\polcb2\Downloads\Physics II - Pinball\Physics II - Box2D - Handout 04\ModuleScene.cpp(120,138): warning C4244: 'argument': conversion from 'TYPE' to 'int', possible loss of data
+          with
+          [
+              TYPE=float
+          ]
+C:\Users\polcb2\Downloads\Physics II - Pinball\Physics II - Box2D - Handout 04\ModuleScene.cpp(120,96): warning C4244: 'argument': conversion from 'TYPE' to 'int', possible loss of data
+          with
+          [
+              TYPE=float
+          ]
+C:\Users\polcb2\Downloads\Physics II - Pinball\Physics II - Box2D - Handout 04\ModuleScene.cpp(120,57): warning C4244: 'argument': conversion from 'TYPE' to 'int', possible loss of data
+          with
+          [
+              TYPE=float
+          ]
+C:\Users\polcb2\Downloads\Physics II - Pinball\Physics II - Box2D - Handout 04\ModuleScene.cpp(120,34): warning C4244: 'argument': conversion from 'TYPE' to 'int', possible loss of data
+          with
+          [
+              TYPE=float
+          ]
+C:\Users\polcb2\Downloads\Physics II - Pinball\Physics II - Box2D - Handout 04\ModuleScene.cpp(128,9): warning C4101: 'y': unreferenced local variable
+C:\Users\polcb2\Downloads\Physics II - Pinball\Physics II - Box2D - Handout 04\ModuleScene.cpp(128,6): warning C4101: 'x': unreferenced local variable
+  SDL Game.vcxproj -> C:\Users\polcb2\Downloads\Physics II - Pinball\Physics II - Box2D - Handout 04\Debug\2D Physics - class 4.exe

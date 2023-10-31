@@ -6,11 +6,11 @@
 
 class PhysBody;
 
-class ModuleSceneIntro : public Module
+class ModuleScene : public Module
 {
 public:
-	ModuleSceneIntro(Application* app, bool start_enabled = true);
-	~ModuleSceneIntro();
+	ModuleScene(Application* app, bool start_enabled = true);
+	~ModuleScene();
 
 	bool Start();
 	update_status Update();
@@ -20,14 +20,13 @@ public:
 public:
 	p2List<PhysBody*> circles;
 	p2List<PhysBody*> boxes;
-	p2List<PhysBody*> ricks;
 
 	PhysBody* sensor;
 	bool sensed;
 
 	SDL_Texture* circle;
 	SDL_Texture* box;
-	SDL_Texture* rick;
+	SDL_Texture* walls;
 	uint bonus_fx;
 	p2Point<int> ray;
 	bool ray_on;

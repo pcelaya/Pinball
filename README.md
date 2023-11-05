@@ -13,6 +13,18 @@ Github Link:
 
 
 Controls:
+ 
+ RIGHT & LEFT ARROW: move the flippers
+ 
+ DOWN ARROW: throw the ball
+ 
+ 
+ - Others:
 
+   1: spawn extra balls
+
+   LEFT CLICK: move the ball
+
+   F1: show/hide colliders
 
 

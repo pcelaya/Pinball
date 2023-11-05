@@ -1,0 +1,8 @@
+﻿  ModulePhysics.cpp
+C:\Users\CLEVO\Downloads\Physics II - Pinball\Physics II - Box2D - Handout 04\ModulePhysics.cpp(108,23): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\CLEVO\Downloads\Physics II - Pinball\Physics II - Box2D - Handout 04\ModulePhysics.cpp(109,25): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\CLEVO\Downloads\Physics II - Pinball\Physics II - Box2D - Handout 04\ModulePhysics.cpp(152,20): warning C4018: '<': no coinciden signed/unsigned
+C:\Users\CLEVO\Downloads\Physics II - Pinball\Physics II - Box2D - Handout 04\ModulePhysics.cpp(352,13): warning C4244: 'inicializando': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\CLEVO\Downloads\Physics II - Pinball\Physics II - Box2D - Handout 04\ModulePhysics.cpp(353,13): warning C4244: 'inicializando': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\CLEVO\Downloads\Physics II - Pinball\Physics II - Box2D - Handout 04\ModulePhysics.cpp(359,27): warning C4244: 'return': conversión de 'float32' a 'int'; posible pérdida de datos
+  SDL Game.vcxproj -> C:\Users\CLEVO\Downloads\Physics II - Pinball\Physics II - Box2D - Handout 04\Debug\2D Physics - class 4.exe

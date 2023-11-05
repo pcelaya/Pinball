@@ -1,6 +1,4 @@
 # PinballFisic
-Hay que hacer un pinball para el dia 5
-Cosas que hay que añadir al README:
 
 Collaborators:
 - Joan Marques Besses - https://github.com/joanmarquesbesses

@@ -33,6 +33,10 @@ public:
 	SDL_Texture* puñoDer;
 	SDL_Texture* baston;
 	uint bonus_fx;
+	uint shenlong;
+	uint resp;
+	uint dbrap;
+	uint punch_fx;
 	p2Point<int> ray;
 	bool ray_on;
 
@@ -73,6 +77,13 @@ public:
 	float bumperTopY;
 	float bumperMidX;
 	float bumperMidY;
+
+	int scoreFont;
+	char scoreText[10] = { "\0" };
+	int score;
+	bool reset;
+	int lives;
+	char scoreLives[4] = { "\0" };
 
 	int count;
 	bool dir;

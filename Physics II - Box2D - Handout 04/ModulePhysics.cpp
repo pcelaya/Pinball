@@ -6,6 +6,7 @@
 #include "p2Point.h"
 #include "math.h"
 #include "ModuleSceneIntro.h"
+#include "ModuleAudio.h"
 
 #ifdef _DEBUG
 #pragma comment( lib, "Box2D/libx86/Debug/Box2D.lib" )
@@ -383,22 +384,53 @@ void ModulePhysics::BeginContact(b2Contact* contact)
 		// Jump Pads
 		if (physA == App->scene_intro->rightPad && physB == c->data) {
 			c->data->body->ApplyForceToCenter(b2Vec2(-45, -50), 1);
+			App->scene_intro->score += 150;
+			App->audio->PlayFx(App->scene_intro->punch_fx);
 		}
 		if (physA == App->scene_intro->leftPad && physB == c->data) {
 			c->data->body->ApplyForceToCenter(b2Vec2(55, -45), 1);
+			App->scene_intro->score += 150;
+			App->audio->PlayFx(App->scene_intro->punch_fx);
 		}
 
 		// Above flipper Jump Pads
 		if (physA == App->scene_intro->leftPlat && physB == c->data) {
 			c->data->body->ApplyForceToCenter(b2Vec2(60, -80), 1);
+			App->scene_intro->score += 15;
+			App->audio->PlayFx(App->scene_intro->resp);
 		}
 		if (physA == App->scene_intro->rightPlat && physB == c->data) {
 			c->data->body->ApplyForceToCenter(b2Vec2(-60, -100), 1);
+			App->scene_intro->score += 15;
+			App->audio->PlayFx(App->scene_intro->resp);
+		}
+
+		if (physA == App->scene_intro->tableroColliders[4] && physB == c->data) {
+			App->audio->PlayFx(App->scene_intro->shenlong);
+			App->scene_intro->score += 75;
+		}
+
+		if (physA == App->scene_intro->tableroColliders[1] && physB == c->data) {
+			App->scene_intro->score += 200;
+			App->audio->PlayFx(App->scene_intro->bonus_fx);
+		}
+		if (physA == App->scene_intro->tableroColliders[5] && physB == c->data) {
+			App->audio->PlayFx(App->scene_intro->punch_fx);
+			App->scene_intro->score += 25;
+		}
+		if (physA == App->scene_intro->tableroColliders[6] && physB == c->data) {
+			App->audio->PlayFx(App->scene_intro->punch_fx);
+			App->scene_intro->score += 25;
+		}
+		if (physA == App->scene_intro->gokup && physB == c->data) {
+			App->audio->PlayFx(App->scene_intro->bonus_fx);
+			App->scene_intro->score += 300;
 		}
 
 		// Losing a ball
 		if (physA == App->scene_intro->loseSensor && physB == c->data) {
-			
+			App->scene_intro->reset = true;
+			App->scene_intro->lives--;
 		}
 		// Next ball, plz
 		c = c->next;
@@ -407,9 +439,6 @@ void ModulePhysics::BeginContact(b2Contact* contact)
 	if(physA && physA->listener != NULL)
 	{
 		physA->listener->OnCollision(physA, physB);
-		//if (physA == App->scene_intro->loseSensor && physB == c->data) {
-		//	App->audio->PlayFx(bonus_fx); App-scene_intro
-		//}
 	}
 
 	if(physB && physB->listener != NULL)

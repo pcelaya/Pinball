@@ -6,6 +6,7 @@
 #include "ModuleTextures.h"
 #include "ModuleAudio.h"
 #include "ModulePhysics.h"
+#include "ModuleFonts.h"
 
 ModuleSceneIntro::ModuleSceneIntro(Application* app, bool start_enabled) : Module(app, start_enabled)
 {
@@ -33,13 +34,22 @@ bool ModuleSceneIntro::Start()
 	puñoIzq = App->textures->Load("pinball/PunoBumperIzq.png");
 	puñoDer = App->textures->Load("pinball/PunoBumperDer.png");
 	baston = App->textures->Load("pinball/PaletaIzqHorizontal.png");
-
+	punch_fx = App->audio->LoadFx("pinball/Punetazo.wav");
+	shenlong = App->audio->LoadFx("pinball/SonidoShenlong.wav");
+	resp = App->audio->LoadFx("pinball/Buu.wav");
 	createBG();
 	createPalas();
 	createSpring();
 	createMotor();
 	CreateSensors();
+	reset = false;
+	lives = 3;
 
+	char lookupTable[] = { "! @,_./0123456789$;< ?abcdefghijklmnopqrstuvwxyz" };
+	scoreFont = App->fonts->Load("pinball/rtype_font3.png", lookupTable, 2);
+	score = 0;
+
+	App->audio->PlayMusic("pinball/Music.ogg");
 	return ret;
 }
 
@@ -126,7 +136,7 @@ update_status ModuleSceneIntro::Update()
 	fVector normal(0.0f, 0.0f);
 
 	// All draw functions ------------------------------------------------------
-	p2List_item<PhysBody*>* c = circles.getFirst();
+	p2List_item<PhysBody*>* c = circles.getLast();
 
 	if (c != NULL) {
 		int x, y;
@@ -148,6 +158,33 @@ update_status ModuleSceneIntro::Update()
 
 		if(normal.x != 0.0f)
 			App->renderer->DrawLine(ray.x + destination.x, ray.y + destination.y, ray.x + destination.x + normal.x * 25.0f, ray.y + destination.y + normal.y * 25.0f, 100, 255, 100);
+	}
+
+	if (reset) {
+		b2Vec2 pos = b2Vec2(PIXEL_TO_METERS(645), PIXEL_TO_METERS(700));
+		circles.getLast()->data->body->SetTransform(pos, 0);
+		reset = false;
+		App->audio->PlayFx(resp);
+	}
+
+	if (App->input->GetKey(SDL_SCANCODE_R) == KEY_DOWN)
+	{
+		b2Vec2 pos = b2Vec2(PIXEL_TO_METERS(645), PIXEL_TO_METERS(700));
+		circles.getLast()->data->body->SetTransform(pos,0);
+		App->audio->PlayFx(resp);
+	}
+
+	App->fonts->BlitText(25, 760, scoreFont, "score");
+	sprintf_s(scoreText, 10, "%7d", score);
+	App->fonts->BlitText(-5, 780, scoreFont, scoreText);
+
+	App->fonts->BlitText(530, 760, scoreFont, "lives");
+	sprintf_s(scoreLives, 10, "%d", lives);
+	App->fonts->BlitText(595, 780, scoreFont, scoreLives);
+
+	if (lives <= 0) {
+		lives = 3;
+		score = 0;
 	}
 
 	return UPDATE_CONTINUE;
@@ -402,4 +439,5 @@ void ModuleSceneIntro::resetBall()
 	circle->body->SetGravityScale(0.1f);
 	circles.add(circle);
 	circles.getLast()->data->listener = this;
+	App->audio->PlayFx(resp);
 }

@@ -9,12 +9,21 @@ Collaborators:
 Github Link:
 - https://github.com/SalvaBernades/PinballFisic
 
+Points:
+
+ - Arms: 25p
+
+ - Buu: 200p
+
+ - Fists: 15p
+
+ - Shenlong: 75p 
 
 Controls:
  
- RIGHT & LEFT ARROW: move the flippers
+ - RIGHT & LEFT ARROW: move the flippers
  
- DOWN ARROW: throw the ball
+ - DOWN ARROW: throw the ball
  
  
  - Others:

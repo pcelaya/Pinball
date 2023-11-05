@@ -9,6 +9,10 @@ Collaborators:
 Github Link:
 - https://github.com/SalvaBernades/PinballFisic
 
+Gameplay:
+
+- You have 3 lives, move the flippers to get the ball going.
+
 Points:
 
  - Arms: 25p
@@ -33,5 +37,13 @@ Controls:
    LEFT CLICK: move the ball
 
    F1: show/hide colliders
+
+   F2: change the target FPS value
+
+   F3: less gravity
+
+   F4: normal gravity
+
+   F5: more gravity
 
 

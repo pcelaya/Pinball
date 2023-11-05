@@ -1,0 +1,83 @@
+﻿  Application.cpp
+  log.cpp
+  Main.cpp
+  ModuleAudio.cpp
+  ModuleInput.cpp
+  ModulePhysics.cpp
+C:\Users\CLEVO\Desktop\joan\Pinball\Physics II - Box2D - Handout 04\ModulePhysics.cpp(108,23): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\CLEVO\Desktop\joan\Pinball\Physics II - Box2D - Handout 04\ModulePhysics.cpp(109,25): warning C4244: '=': conversión de 'float' a 'int'; posible pérdida de datos
+C:\Users\CLEVO\Desktop\joan\Pinball\Physics II - Box2D - Handout 04\ModulePhysics.cpp(152,20): warning C4018: '<': no coinciden signed/unsigned
+C:\Users\CLEVO\Desktop\joan\Pinball\Physics II - Box2D - Handout 04\ModulePhysics.cpp(352,13): warning C4244: 'inicializando': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\CLEVO\Desktop\joan\Pinball\Physics II - Box2D - Handout 04\ModulePhysics.cpp(353,13): warning C4244: 'inicializando': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\CLEVO\Desktop\joan\Pinball\Physics II - Box2D - Handout 04\ModulePhysics.cpp(359,27): warning C4244: 'return': conversión de 'float32' a 'int'; posible pérdida de datos
+  ModulePlayer.cpp
+  ModuleRender.cpp
+  ModuleSceneIntro.cpp
+C:\Users\CLEVO\Desktop\joan\Pinball\Physics II - Box2D - Handout 04\ModuleSceneIntro.cpp(82,51): warning C4244: 'argumento': conversión de 'int' a 'float32'; posible pérdida de datos
+C:\Users\CLEVO\Desktop\joan\Pinball\Physics II - Box2D - Handout 04\ModuleSceneIntro.cpp(85,52): warning C4244: 'argumento': conversión de 'int' a 'float32'; posible pérdida de datos
+C:\Users\CLEVO\Desktop\joan\Pinball\Physics II - Box2D - Handout 04\ModuleSceneIntro.cpp(95,49): warning C4244: 'argumento': conversión de 'int' a 'float32'; posible pérdida de datos
+C:\Users\CLEVO\Desktop\joan\Pinball\Physics II - Box2D - Handout 04\ModuleSceneIntro.cpp(143,45): warning C4244: 'argumento': conversión de 'TYPE' a 'TYPE'; posible pérdida de datos
+          with
+          [
+              TYPE=int
+          ]
+          and
+          [
+              TYPE=float
+          ]
+C:\Users\CLEVO\Desktop\joan\Pinball\Physics II - Box2D - Handout 04\ModuleSceneIntro.cpp(143,30): warning C4244: 'argumento': conversión de 'TYPE' a 'TYPE'; posible pérdida de datos
+          with
+          [
+              TYPE=int
+          ]
+          and
+          [
+              TYPE=float
+          ]
+C:\Users\CLEVO\Desktop\joan\Pinball\Physics II - Box2D - Handout 04\ModuleSceneIntro.cpp(145,18): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+C:\Users\CLEVO\Desktop\joan\Pinball\Physics II - Box2D - Handout 04\ModuleSceneIntro.cpp(147,70): warning C4244: 'argumento': conversión de 'TYPE' a 'int'; posible pérdida de datos
+          with
+          [
+              TYPE=float
+          ]
+C:\Users\CLEVO\Desktop\joan\Pinball\Physics II - Box2D - Handout 04\ModuleSceneIntro.cpp(147,47): warning C4244: 'argumento': conversión de 'TYPE' a 'int'; posible pérdida de datos
+          with
+          [
+              TYPE=float
+          ]
+C:\Users\CLEVO\Desktop\joan\Pinball\Physics II - Box2D - Handout 04\ModuleSceneIntro.cpp(150,138): warning C4244: 'argumento': conversión de 'TYPE' a 'int'; posible pérdida de datos
+          with
+          [
+              TYPE=float
+          ]
+C:\Users\CLEVO\Desktop\joan\Pinball\Physics II - Box2D - Handout 04\ModuleSceneIntro.cpp(150,96): warning C4244: 'argumento': conversión de 'TYPE' a 'int'; posible pérdida de datos
+          with
+          [
+              TYPE=float
+          ]
+C:\Users\CLEVO\Desktop\joan\Pinball\Physics II - Box2D - Handout 04\ModuleSceneIntro.cpp(150,57): warning C4244: 'argumento': conversión de 'TYPE' a 'int'; posible pérdida de datos
+          with
+          [
+              TYPE=float
+          ]
+C:\Users\CLEVO\Desktop\joan\Pinball\Physics II - Box2D - Handout 04\ModuleSceneIntro.cpp(150,34): warning C4244: 'argumento': conversión de 'TYPE' a 'int'; posible pérdida de datos
+          with
+          [
+              TYPE=float
+          ]
+C:\Users\CLEVO\Desktop\joan\Pinball\Physics II - Box2D - Handout 04\ModuleSceneIntro.cpp(158,9): warning C4101: 'y': variable local sin referencia
+C:\Users\CLEVO\Desktop\joan\Pinball\Physics II - Box2D - Handout 04\ModuleSceneIntro.cpp(158,6): warning C4101: 'x': variable local sin referencia
+C:\Users\CLEVO\Desktop\joan\Pinball\Physics II - Box2D - Handout 04\ModuleSceneIntro.cpp(369,31): warning C4305: '=': truncamiento de 'double' a 'float32'
+C:\Users\CLEVO\Desktop\joan\Pinball\Physics II - Box2D - Handout 04\ModuleSceneIntro.cpp(381,26): warning C4305: 'argumento': truncamiento de 'double' a 'float32'
+C:\Users\CLEVO\Desktop\joan\Pinball\Physics II - Box2D - Handout 04\ModuleSceneIntro.cpp(382,47): warning C4305: 'argumento': truncamiento de 'double' a 'float32'
+C:\Users\CLEVO\Desktop\joan\Pinball\Physics II - Box2D - Handout 04\ModuleSceneIntro.cpp(384,29): warning C4305: 'argumento': truncamiento de 'double' a 'float32'
+C:\Users\CLEVO\Desktop\joan\Pinball\Physics II - Box2D - Handout 04\ModuleSceneIntro.cpp(385,47): warning C4305: 'argumento': truncamiento de 'double' a 'float32'
+C:\Users\CLEVO\Desktop\joan\Pinball\Physics II - Box2D - Handout 04\ModuleSceneIntro.cpp(389,26): warning C4305: 'argumento': truncamiento de 'double' a 'float32'
+C:\Users\CLEVO\Desktop\joan\Pinball\Physics II - Box2D - Handout 04\ModuleSceneIntro.cpp(390,25): warning C4305: 'argumento': truncamiento de 'double' a 'float32'
+  ModuleTextures.cpp
+  ModuleWindow.cpp
+  Generando código
+  Previous IPDB not found, fall back to full compilation.
+  All 212 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Generación de código finalizada
+  SDL Game.vcxproj -> C:\Users\CLEVO\Desktop\joan\Pinball\Physics II - Box2D - Handout 04\Release\2D Physics - class 4.exe

@@ -32,7 +32,7 @@ Controls:
  
  - Others:
 
-   1: spawn extra balls
+   R: spawn extra balls
 
    LEFT CLICK: move the ball
 

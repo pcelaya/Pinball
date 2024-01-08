@@ -7,7 +7,7 @@ Collaborators:
 - Salvador Bernades Iglesias - https://github.com/SalvaBernades
 
 Github Link:
-- [https://github.com/SalvaBernades/PinballFisic](https://github.com/pcelaya/Pinball)
+- https://github.com/pcelaya/Pinball(https://github.com/pcelaya/Pinball)
 
 Gameplay:
 

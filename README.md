@@ -2,12 +2,11 @@
 
 Collaborators:
 - Joan Marques Besses - https://github.com/joanmarquesbesses
-- Nil Barberà Tuset - https://github.com/Nil-BT
 - Pol Celaya Bassas - https://github.com/pcelaya
 - Salvador Bernades Iglesias - https://github.com/SalvaBernades
 
 Github Link:
-- https://github.com/pcelaya/Pinball(https://github.com/pcelaya/Pinball)
+- (https://github.com/pcelaya/Pinball)
 
 Gameplay:
 
